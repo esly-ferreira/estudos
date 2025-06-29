@@ -1,0 +1,135 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/links.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <title>VScode</title>
+</head>
+
+<body>
+  <button class="voltar" onclick="window.location.href='../index.html'">Voltar</button>
+  <button id="toggleSidebar">☰</button>
+
+  <div class="sidebar">
+    <a href="#extensoes">Extensões</a>
+    <a href="#Open Settings (JSON)">Open Settings (JSON)</a>
+  </div>
+
+  <div class="max1200">
+
+    <h1 class="shine">VSCode</h1>
+
+    <div id="extensoes" class="container">
+      <h1>Auto Close Tag</h1>
+
+      <h3>A extensão Auto Close Tag do VS Code fecha automaticamente tags HTML, XML e similares assim que você abre uma, agilizando o desenvolvimento e evitando erros de sintaxe.</h3>
+      <hr>
+      <h1>Auto Complete Tag</h1>
+
+      <h3>A extensão Auto Complete Tag do VS Code completa automaticamente a tag de fechamento enquanto você digita a de abertura, prevendo a tag correta sem precisar digitar manualmente, o que acelera a escrita de HTML, XML e JSX.
+      </h3>
+      <hr>
+      <h1>Auto Import</h1>
+
+      <h3>A extensão Auto Import do VS Code adiciona automaticamente as instruções de importação no topo do arquivo ao usar funções, classes ou componentes de outros módulos, agilizando o desenvolvimento em JavaScript, TypeScript e frameworks como React.
+      </h3>
+      <hr>
+      <h1>Auto Rename Tag</h1>
+
+      <h3>A extensão Auto Rename Tag do VS Code renomeia automaticamente a tag de fechamento quando você altera a tag de abertura (e vice-versa) em arquivos HTML, XML, JSX e similares, garantindo que elas fiquem sempre sincronizadas sem você ter que editar manualmente as duas.
+      </h3>
+      <hr>
+      <h1>Code Runner</h1>
+
+      <h3>A extensão Code Runner do VS Code executa rapidamente trechos de código de várias linguagens direto no editor, sem precisar configurar projetos ou terminais, facilitando testar scripts e snippets de forma instantânea.
+      </h3>
+      <hr>
+      <h1>Color Highlights</h1>
+
+      <h3>A extensão Color Highlights do VS Code destaca visualmente no código as cores definidas em formatos como HEX, RGB, HSL, mostrando um preview da cor diretamente no editor, facilitando a identificação e edição rápida das cores usadas.</h3>
+      <hr>
+      <h1>Icons</h1>
+
+      <h3>A extensão Icons do VS Code adiciona ícones personalizados às pastas e arquivos no explorador, facilitando a identificação visual dos tipos de arquivos e melhorando a navegação no projeto</h3>
+      <hr>
+      <h1>Image Preview</h1>
+
+      <h3>A extensão Image Preview do VS Code permite visualizar imagens diretamente no editor ou ao passar o mouse sobre o nome do arquivo, sem precisar abrir um programa externo, acelerando a conferência rápida de imagens no projeto.</h3>
+      <hr>
+      <h1>Live Server</h1>
+
+      <h3>A extensão Live Server do VS Code cria um servidor local que atualiza automaticamente a página no navegador sempre que você salva um arquivo, acelerando o desenvolvimento web com feedback instantâneo.</h3>
+      <hr>
+      <h1>Prettier Code Formatter</h1>
+
+      <h3>A extensão Prettier Code Formatter do VS Code formata automaticamente seu código conforme padrões definidos, garantindo estilo consistente e legível em várias linguagens, sem você precisar se preocupar com espaçamentos, quebras ou indentação manual.</h3>
+      <hr>
+      <h1>Portuguese Brazilian Language Pack for VS Code</h1>
+
+      <h3>Essa extensão traduz a interface do Visual Studio Code para português brasileiro, facilitando o uso do editor para quem prefere trabalhar em português.</h3>
+      <hr>
+      <h1>Brazilian Portuguese Code Spell Checker</h1>
+
+      <h3>A extensão Brazilian Portuguese Code Spell Checker do VS Code verifica a ortografia de comentários, strings e textos no código em português brasileiro, ajudando a evitar erros de digitação e melhorar a qualidade do código escrito.</h3>
+    </div>
+
+    <div id="Open Settings (JSON)" class="container">
+      <h1>Open Settings (JSON)</h1>
+      <hr>
+      <h3>A opção "Open Settings (JSON)" no VS Code serve para abrir o arquivo de configurações do usuário em formato JSON, permitindo editar manualmente todas as configurações do editor com controle total, inclusive ajustes avançados que nem sempre estão disponíveis na interface gráfica.</h3>
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')" data-tilt data-tilt-max="0" data-tilt-scale="1">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-json" >
+{
+  "workbench.colorTheme": "Origamid Next",
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.75,
+  "editor.tabSize": 2,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.wordWrap": "on",
+  "editor.minimap.renderCharacters": false,
+  "telemetry.telemetryLevel": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "breadcrumbs.filePath": "off",
+  "outline.icons": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.formatOnSave": true,
+  "html.format.wrapAttributes": "auto",
+  "html.format.wrapLineLength": 0,
+  "html.autoClosingTags": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.bracketPairColorization.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "git.openRepositoryInParentFolders": "always",
+  "explorer.confirmDelete": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "explorer.confirmPasteNative": false,
+  "explorer.confirmDragAndDrop": false,
+  "amazonQ.suppressPrompts": {
+    "amazonQChatDisclaimer": true
+  },
+  "cSpell.userWords": ["nomecompleto"],
+  "git.suggestSmartCommit": false
+}
+</code>
+</pre>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+</body>
+
+</html>

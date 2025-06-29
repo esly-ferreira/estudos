@@ -1,0 +1,51 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/links.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <title>CSS</title>
+</head>
+
+<body>
+
+  <button id="toggleSidebar">☰</button>
+  <div class="sidebar">
+    <a href="#reset">Reset e base global do layout</a>
+    <a href="#html">HTML</a>
+    <a href="#vue">Vue</a>
+    <a href="#styles">Styles</a>
+  </div>
+
+
+  <div class="max1200">
+
+    <h1 class="shine">CSS</h1>
+
+    <div id="reset" class="container">
+      <h1>Reset e base global do layout.</h1>
+      <hr>
+      <p>Esse CSS define regras globais para padronizar o estilo da página. Remove margens e preenchimentos padrão, ajusta a tipografia com a fonte Poppins, tira a formatação de listas e links, garante que imagens não ultrapassem seu contêiner, zera margens de textos e títulos e aplica borda arredondada em imagens no formato .webp. Tudo isso prepara o layout para ter aparência limpa e consistente.</p>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')" data-tilt data-tilt-max="0" data-tilt-scale="1">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css" >
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+</code>
+</pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+</body>
+
+</html>

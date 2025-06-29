@@ -1,0 +1,59 @@
+#toggleSidebar {
+  position: fixed;
+  top: 12px;
+  left: 16px;
+  z-index: 11;
+  color: var(--A5);
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  background: rgba(13, 17, 23, 0.55);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid rgba(13, 17, 23, 0.3);
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+  border-right: 1px solid var(--A3);
+  transition: transform 0.3s ease;
+  background: rgba(13, 17, 23, 0.55);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid rgba(13, 17, 23, 0.3);
+    overflow-y: auto; /* ← aqui ativa o scroll */
+  scroll-behavior: smooth;
+}
+
+.sidebar a {
+  color: var(--A5);
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--A5);
+}
+
+.sidebar a:hover {
+  background: rgba(61, 68, 77, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+}
+

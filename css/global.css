@@ -116,6 +116,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   color: var(--A5);
+  word-break: break-all;
 }
 
 hr {
@@ -196,6 +197,15 @@ pre {
 @media (max-width: 720px) {
   .container-home {
     grid-template-columns: 1fr 1fr;
+  }
+  h1 {
+    font-size: 26px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  h3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 

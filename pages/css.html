@@ -14,7 +14,7 @@
   <button class="voltar" onclick="window.location.href='../index.html'">Voltar</button>
   <button id="toggleSidebar">☰</button>
 
-  <div class="sidebar">
+  <div class="sidebar hidden">
     <a href="#reset">Reset e base global do layout</a>
     <a href="#Documentação">Documentação</a>
     <a href="#vue">Vue</a>
@@ -30,7 +30,7 @@
       <hr>
       <h3>Esse CSS define regras globais para padronizar o estilo da página. Remove margens e preenchimentos padrão, ajusta a tipografia com a fonte Poppins, tira a formatação de listas e links, garante que imagens não ultrapassem seu contêiner, zera margens de textos e títulos e aplica borda arredondada em imagens no formato .webp. Tudo isso prepara o layout para ter aparência limpa e consistente.</h3>
 
-      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')" data-tilt data-tilt-max="0" data-tilt-scale="1">
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
         <button onclick="copyCode(this)">Copiar</button>
         <pre>
 <code class="language-css" >
@@ -82,6 +82,7 @@ img[src$=".webp"]{
       <h3>Existem centenas de tags e propriedades, é quase impossível você gravar todas elas. Por isso consultamos uma documentação.</h3>
       <h2>Mozilla</h2>
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements">https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements</a>
+      <br>
       <br>
       <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a>
 

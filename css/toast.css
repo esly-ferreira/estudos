@@ -1,0 +1,21 @@
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: var(--A5);
+  text-align: center;
+  border-radius: 12px;
+  padding: 16px;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  z-index: 1001;
+  transition: visibility 0s, opacity 0.5s linear;
+  opacity: 0;
+  background: rgba(13, 17, 23, 0.55);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid rgba(69, 75, 83, 0.3);
+}

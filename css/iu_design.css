@@ -1,0 +1,78 @@
+/* Corpo de texto */
+.font14 {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--A4);
+}
+.font16 {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--A4);
+}
+.font18 {
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--A4);
+}
+.font24 {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--A4);
+}
+
+/* Títulos */
+.font36 {
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--A4);
+}
+.font48 {
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--A4);
+}
+.font52 {
+  font-size: 52px;
+  line-height: 60px;
+  color: var(--A4);
+}
+.font64 {
+  font-size: 64px;
+  line-height: 72px;
+  color: var(--A4);
+}
+.font72 {
+  font-size: 72px;
+  line-height: 80px;
+  color: var(--A4);
+}
+.font84 {
+  font-size: 84px;
+  line-height: 92px;
+  color: var(--A4);
+}
+.font96 {
+  font-size: 96px;
+  line-height: 104px;
+  color: var(--A4);
+}
+
+.ajuste-fontes {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  align-items: center;
+  gap: 20px;
+}
+
+.ajuste-fontes p {
+  padding: 25px 25px;
+  border-radius: 12px;
+  border: solid 1px var(--A3);
+}
+
+.ajuste-fontes p:hover {
+  background: var(--A3);
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  cursor: pointer;
+}

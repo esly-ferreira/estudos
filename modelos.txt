@@ -11,8 +11,10 @@
 
 <body>
 
+  <button class="voltar" onclick="window.location.href='../index.html'">Voltar</button>
+
   <button id="toggleSidebar">☰</button>
-  <div class="sidebar">
+  <div class="sidebar hidden">
     <a href="#reset">Reset e base global do layout</a>
     <a href="#html">HTML</a>
     <a href="#vue">Vue</a>

@@ -177,11 +177,6 @@ pre {
   border: 1px solid var(--A3);
   border-radius: 16px;
   padding: 12px 16px;
-  background: linear-gradient(
-    -15deg,
-    rgba(255, 255, 255, 0.04) 10%,
-    rgba(0, 123, 255, 0) 30%
-  );
 }
 
 @media (max-width: 1216px) {

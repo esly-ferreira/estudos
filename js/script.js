@@ -63,11 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = fontSizeMap[fontClass];
       if (!data) return console.warn('Classe não mapeada');
 
-      const cssText = `.`;
+      const cssText = `.${fontClass} {\n  font-size: ${data.size}px;\n  line-height: ${data.lineHeight}px;\n}`;
+
+  console.log(fontClass)
 
       try {
         await navigator.clipboard.writeText(cssText);
-        showToast(`Copiado${cssText}`);
+        showToast(`Copiado ${fontClass}`);
       } catch (err) {
         console.error('Erro ao copiar:', err);
         showToast('Erro ao copiar!');
@@ -75,5 +77,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-

@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 
 body {
@@ -121,9 +121,24 @@ a {
 
 hr {
   border: none;
-  border-top: 1px solid var(--A3);
-  padding-bottom: 12px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  border-radius: 12px;
+  background: radial-gradient(circle, var(--A3) 10%, var(--A5) 30%, var(--A3) 80%);
+  background-size: 200% auto;
+  animation: shine 10s infinite linear;
 }
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 
 .container-home {
   display: grid;
@@ -188,6 +203,8 @@ pre {
     padding-left: 12px;
   }
 }
+
+
 
 @media (max-width: 1366px) {
   .shine {

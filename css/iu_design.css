@@ -74,7 +74,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'poppins';
+  font-family: "poppins";
   font-weight: bold;
 }
 
@@ -89,6 +89,7 @@
   gap: 12px;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  
 }
 
 .escala-espaco {
@@ -98,53 +99,57 @@
   align-items: center;
 }
 
+.escala-espaco h3{
+  z-index: 1;
+}
+
 .espaco-2 {
   width: 2px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-4 {
   width: 4px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-8 {
   width: 8px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-12 {
   width: 12px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-16 {
   width: 16px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-24 {
   width: 24px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-32 {
   width: 32px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-48 {
   width: 48px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-56 {
   width: 56px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-64 {
   width: 64px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-96 {
   width: 96px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-128 {
   width: 128px;
-  height: 100px;
+  height: 200px;
 }
 .espaco-160 {
   width: 160px;
@@ -153,10 +158,17 @@
 
 .escala-espaco span {
   border-radius: 12px 12px 0 0;
-  background: #0d1117;
   background: linear-gradient(
     0deg,
-    rgba(13, 17, 23, 0.87) 20%,
-    rgba(61, 68, 77, 1) 150%
+    rgba(13, 17, 23, 0.87) 10%,
+    rgba(61, 68, 77, 1) 170%
   );
+  height: 100px;
+  transform-origin: bottom; /* cresce de baixo pra cima */
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.escala-espaco span:hover {
+  transform: scaleY(1.8);
 }

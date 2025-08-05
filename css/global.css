@@ -122,21 +122,11 @@ a {
 hr {
   border: none;
   height: 1px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   padding: 0;
-  margin: 0;
-  border-radius: 12px;
-  background: radial-gradient(circle, var(--A3) 10%, var(--A5) 30%, var(--A3) 80%);
-  background-size: 200% auto;
-  animation: shine 10s infinite linear;
-}
-
-@keyframes shine {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
+  border-radius: 4px;
+  background-color: var(--A3);
 }
 
 

@@ -129,20 +129,20 @@ hr {
   background-color: var(--A3);
 }
 
-
 .container-home {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 16px;
+  gap: 24px;
 }
 
 .container,
 .container-home {
   margin: 16px auto;
   background-color: var(--A2);
-  border-radius: 12px;
+  border-radius: 16px;
   border: 1px solid var(--A3);
   padding: 24px;
+  background: var(--A2);
 }
 
 .code {
@@ -181,7 +181,8 @@ pre {
   align-content: start;
   border: 1px solid var(--A3);
   border-radius: 16px;
-  padding: 12px 16px;
+  padding: 16px;
+  background: var(--A2);
 }
 
 @media (max-width: 1216px) {
@@ -189,12 +190,11 @@ pre {
   .container {
     margin: 16px;
   }
-  .shine {
+  .shine,
+  .margin-left {
     padding-left: 12px;
   }
 }
-
-
 
 @media (max-width: 1366px) {
   .shine {

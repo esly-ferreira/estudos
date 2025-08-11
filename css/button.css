@@ -1,6 +1,6 @@
 /* From Uiverse.io by e-coders */ 
 button {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  font-family: "Segoe UI","ubuntu", sans-serif;
   appearance: none;
   background-color: #fafbfc;
   border: 1px solid rgba(27, 31, 35, 0.15);

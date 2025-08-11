@@ -1,4 +1,4 @@
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -17,8 +17,8 @@
   <div class="sidebar hidden">
     <a href="#reset">Reset e base global do layout</a>
     <a href="#Documentação">Documentação</a>
-    <a href="#vue">Vue</a>
-    <a href="#styles">Styles</a>
+    <a href="#Inline">Inline</a>
+    <a href="#img">Imagem</a>
   </div>
 
 
@@ -44,7 +44,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: var(--A1);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  font-family: "Segoe UI","ubuntu", sans-serif;
   padding: 24px;
   position: relative;
   padding: 0;
@@ -88,6 +88,94 @@ img[src$=".webp"]{
 
       <h2>W3C</h2>
       <a href="https://www.w3.org/TR/">https://www.w3.org/TR/</a>
+    </div>
+
+    <div id="Inline" class="container">
+      <h1>Display inline e block</h1>
+      <hr>
+      <h3>inline-block: O elemento continua inline, mas passa a receber as propriedades do box model.
+      </h3>
+      <p>Teste com <span class="inline-block">Inline Block</span></p>
+      <br><br>
+      <p>Teste com <span class="inline">Inline</span></p>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css" >
+.inline-block {
+  color: var(--B1);
+  background-color: var(--A3);
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  width: 160px;
+  padding: 4px;
+}
+
+.inline {
+  color: var(--B1);
+  background-color: var(--A3);
+  display: inline;
+  text-align: center;
+  border-radius: 5px;
+  width: 160px;
+  padding: 4px;
+}
+</code>
+        </pre>
+      </div>
+    </div>
+
+    <div id="img" class="container">
+      <h1>Imagem</h1>
+      <hr>
+      <h3><span class="inline">max-width: 100%;</span> Geralmente definimos um width máximo de 100% para a imagem, assim ela não cresce além do elemento</h3>
+      <img src="../imgs/paisagem-natural-og.webp" alt="paisagem-natural-og">
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css" >
+img {
+  max-width: 100%;
+}
+</code>
+        </pre>
+      </div>
+    </div>
+
+    <div id="img" class="container">
+      <h1>Grid</h1>
+      <hr>
+      <h3>Com o <span class="inline">display: grid;</span> é possível definirmos colunas e linhas para organizarmos os elementos que estiverem dentro do grid.</h3>
+
+      <div class="display-grid">
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+      </div>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css" >
+.display-grid{
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr 1fr;
+  gap: 20px;
+}
+
+.bloco{
+  background-color: var(--A3);
+  border-radius: 4px;
+}
+</code>
+        </pre>
+      </div>
     </div>
 
   </div>

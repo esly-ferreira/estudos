@@ -1,0 +1,50 @@
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/links.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <title>CSS</title>
+</head>
+
+<body>
+
+  <button class="voltar" onclick="window.location.href='../index.html'">Voltar</button>
+
+  <button id="toggleSidebar">☰</button>
+  <div class="sidebar hidden">
+    <a href="#reset">Reset e base global do layout</a>
+  </div>
+
+
+  <div class="max1200">
+
+    <h1 class="shine">JavaScript</h1>
+
+    <div id="reset" class="container">
+      <h1>Tipo de variáveis</h1>
+      <hr>
+      <p>Responsáveis por guardar dados na memória.
+        Inicia com a palavra <span class="comando">var</span>, <span class="comando">let</span> ou <span class="comando">const</span>
+      </p>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')" data-tilt data-tilt-max="0" data-tilt-scale="1">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language" >
+var nome = 'Esly';
+let idade = 15;
+const possuiFaculdade = true;
+</code>
+</pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+</body>
+
+</html>

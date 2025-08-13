@@ -17,8 +17,12 @@
   <div class="sidebar hidden">
     <a href="#reset">Reset e base global do layout</a>
     <a href="#Documentação">Documentação</a>
+    <a href="#link">Link-CSS</a>
+    <a href="#tipografia">tipografia</a>
     <a href="#Inline">Inline</a>
     <a href="#img">Imagem</a>
+    <a href="#grid">Grid</a>
+
   </div>
 
 
@@ -90,10 +94,57 @@ img[src$=".webp"]{
       <a href="https://www.w3.org/TR/">https://www.w3.org/TR/</a>
     </div>
 
+    <div id="link" class="container">
+      <h1>Link-CSS</h1>
+      <hr>
+      <h3>Esta é a forma padrão e correta de vincular uma folha de estilo externa, usando a tag <span class="inline">&ltlink></span> com os atributos <span class="inline">rel</span>, <span class="inline">type</span> e <span class="inline">href</span>.
+      </h3>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css" >
+  &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+</code>
+        </pre>
+      </div>
+    </div>
+
+    <div id="tipografia" class="container">
+      <h1>Tipografia em CSS</h1>
+      <hr>
+      <h3>A tipografia controla como o texto é exibido, desde o tipo da fonte até o espaçamento entre as linhas. As principais propriedades são:</h3>
+
+      <h3 class="font-family inline">font-family:</h3>
+      <h3>font-family: 'Courier New', Courier, monospace;</h3> <br>
+
+      <h3 class="font-size inline">font-size:</h3>
+      <h3>font-size: 24px;</h3> <br>
+
+      <h3 class="font-weight inline">font-weight:</h3>
+      <h3>font-weight: 100;</h3> <br>
+
+      <h3 class="font-style inline">font-style:</h3>
+      <h3>font-style: italic;</h3> <br>
+
+      <h3 class="line-height inline-block">line-height:</h3>
+      <h3>line-height: 4;</h3> <br>
+
+      <h3 class="text-align inline-block">text-align:</h3>
+      <h3>text-align: right;</h3> <br>
+
+      <h3 class="text-decoration inline">text-decoration:</h3>
+      <h3>text-decoration: underline;</h3> <br>
+
+      <h3 class="letter-spacing inline">letter-spacing</h3>
+      <h3>letter-spacing: 12px;</h3> <br>
+
+    </div>
+
     <div id="Inline" class="container">
       <h1>Display inline e block</h1>
       <hr>
-      <h3>inline-block: O elemento continua inline, mas passa a receber as propriedades do box model.
+      <h3><span class="inline">inline-block:</span> O elemento continua inline, mas passa a receber as propriedades do box model.
       </h3>
       <p>Teste com <span class="inline-block">Inline Block</span></p>
       <br><br>
@@ -145,7 +196,7 @@ img {
       </div>
     </div>
 
-    <div id="img" class="container">
+    <div id="grid" class="container">
       <h1>Grid</h1>
       <hr>
       <h3>Com o <span class="inline">display: grid;</span> é possível definirmos colunas e linhas para organizarmos os elementos que estiverem dentro do grid.</h3>

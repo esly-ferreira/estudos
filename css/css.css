@@ -8,6 +8,51 @@
   padding: 4px;
 }
 
+.font-family {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.font-size {
+  font-size: 24px;
+}
+
+.font-weight {
+  font-weight: 100;
+}
+
+.font-style {
+  font-style: italic;
+}
+
+.line-height {
+  line-height: 4;
+}
+
+.font-style {
+  font-style: italic;
+}
+
+.font-style {
+  font-style: italic;
+}
+
+.text-align {
+  text-align: right;
+}
+
+.text-decoration {
+  text-decoration: underline;
+}
+
+.letter-spacing {
+  letter-spacing: 12px;
+}
+
+.word-spacing{
+  word-spacing:12%;
+}
+
+
 .inline {
   color: var(--B1);
   background-color: var(--A3);
@@ -23,13 +68,13 @@
   padding-bottom: 0;
 }
 
-.display-grid{
+.display-grid {
   display: grid;
   grid-template-columns: 100px 2fr 1fr 1fr;
   gap: 20px;
 }
 
-.bloco{
+.bloco {
   background-color: var(--A3);
   border-radius: 4px;
 }

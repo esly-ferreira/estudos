@@ -1,3 +1,7 @@
+section {
+  padding-bottom: 12px;
+}
+
 .inline-block {
   color: var(--B1);
   background-color: var(--A3);
@@ -48,10 +52,9 @@
   letter-spacing: 12px;
 }
 
-.word-spacing{
-  word-spacing:12%;
+.word-spacing {
+  word-spacing: 12%;
 }
-
 
 .inline {
   color: var(--B1);
@@ -76,5 +79,59 @@
 
 .bloco {
   background-color: var(--A3);
+  border-radius: 4px;
+}
+
+.seletor-filho-direto > p {
+  color: var(--B1);
+}
+
+.seletor-ao-lado p + p {
+  color: var(--B1);
+}
+
+.seletor-nthchild p:nth-child(1) {
+  color: var(--B1);
+}
+
+.seletor-nthchilds p:last-child {
+  color: var(--B1);
+}
+
+.container-before h1,
+.container-after h1 {
+  font-size: 64px;
+}
+
+.container-before,
+.container-after {
+  display: grid;
+  border: 1px solid var(--A3);
+  height: 200px;
+  position: relative;
+  border-radius: 12px;
+  place-items: center;
+  margin-bottom: 16px;
+}
+
+.container-after::after {
+  content: "";
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  background: #4492f8bf;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.container-before::before {
+  content: "";
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  background: #4492f8bf;
+  width: 50px;
+  height: 50px;
   border-radius: 4px;
 }

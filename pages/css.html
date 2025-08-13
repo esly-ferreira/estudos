@@ -19,12 +19,14 @@
     <a href="#Documentação">Documentação</a>
     <a href="#link">Link-CSS</a>
     <a href="#tipografia">tipografia</a>
+    <a href="#filhos-diretos">Selecionar filhos diretos</a>
+    <a href="#filhos-adjacentes">Selecionar ao lado adjacente</a>
+    <a href="#nth-child">Selecionar filho específico com nth-child</a>
+    <a href="#before-after">Usar ::before e ::after</a>
     <a href="#Inline">Inline</a>
-    <a href="#img">Imagem</a>
     <a href="#grid">Grid</a>
 
   </div>
-
 
   <div class="max1200">
     <h1 class="shine">CSS</h1>
@@ -85,13 +87,13 @@ img[src$=".webp"]{
       <hr>
       <h3>Existem centenas de tags e propriedades, é quase impossível você gravar todas elas. Por isso consultamos uma documentação.</h3>
       <h2>Mozilla</h2>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements">https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements</a>
       <br>
       <br>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a>
 
       <h2>W3C</h2>
-      <a href="https://www.w3.org/TR/">https://www.w3.org/TR/</a>
+      <a href="https://www.w3.org/TR/" target="_blank">https://www.w3.org/TR/</a>
     </div>
 
     <div id="link" class="container">
@@ -104,9 +106,10 @@ img[src$=".webp"]{
         <button onclick="copyCode(this)">Copiar</button>
         <pre>
 <code class="language-css" >
-  &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+  &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;3
+
 </code>
-        </pre>
+</pre>
       </div>
     </div>
 
@@ -138,6 +141,248 @@ img[src$=".webp"]{
 
       <h3 class="letter-spacing inline">letter-spacing</h3>
       <h3>letter-spacing: 12px;</h3> <br>
+
+    </div>
+
+    <div id="filhos-diretos" class="container">
+      <h1>Selecionar filhos diretos</h1>
+      <hr>
+      <section class="seletor-filho-direto">
+        <p> Teste 1</p>
+        <p> Teste 2</p>
+        <section>
+          <p> Teste 3</p>
+        </section>
+      </section>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css">
+&lt;section class="seletor-filho-direto"&gt;
+  &lt;p&gt; Teste 1&lt;/p&gt;
+  &lt;p&gt; Teste 2&lt;/p&gt;
+  &lt;section&gt;
+    &lt;p&gt; Teste 3&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/section&gt;
+
+&lt;style&gt;
+  .seletor-filho-direto &gt; p {
+    color: var(--B1);
+  }
+&lt;/style&gt;
+</code>
+  </pre>
+      </div>
+
+
+
+    </div>
+
+    <div id="filhos-adjacentes" class="container">
+      <h1>Selecionar ao lado adjacente</h1>
+      <hr>
+      <section class="seletor-ao-lado">
+        <p> Teste 1</p>
+        <p> Teste 2</p>
+        <section>
+          <p> Teste 3</p>
+        </section>
+      </section>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css">
+&lt;section class="seletor-ao-lado"&gt;
+  &lt;p&gt; Teste 1&lt;/p&gt;
+  &lt;p&gt; Teste 2&lt;/p&gt;
+  &lt;section&gt;
+    &lt;p&gt; Teste 3&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/section&gt;
+
+&lt;style&gt;
+  .seletor-ao-lado p + p {
+    color: var(--B1);
+  }
+&lt;/style&gt;
+</code>
+  </pre>
+      </div>
+
+
+
+    </div>
+
+    <div id="nth-child" class="container">
+      <h1>Selecionar filho específico com nth-child</h1>
+      <hr>
+      <section class="seletor-nthchild seletor-nthchilds">
+        <p> Teste 1</p>
+        <p> Teste 2</p>
+        <p> Teste 3</p>
+      </section>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css">
+&lt;div class="seletor-nthchild"&gt;
+  &lt;p&gt;Teste 1&lt;/p&gt;
+  &lt;p&gt;Teste 2&lt;/p&gt;
+  &lt;p&gt;Teste 3&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+  .seletor-nthchild p:nth-child(1) {
+    color: var(--B1);
+  }
+  .seletor-nthchilds p:last-child {
+    color: var(--B1);
+&lt;/style&gt;
+</code>
+</pre>
+
+      </div>
+    </div>
+
+    <div id="before-after" class="container">
+      <h1>Usar ::before e ::after</h1>
+      <div class="container-after">
+        <h1>After</h1>
+      </div>
+
+      <div class="container-before">
+        <h1>Before</h1>
+      </div>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css">
+&lt;div class="container-after"&gt;
+  &lt;h1&gt;E&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class="container-before"&gt;
+  &lt;h1&gt;E&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+  .container-before,
+  .container-after {
+    display: grid;
+    border: 1px solid var(--A3);
+    height: 200px;
+    position: relative;
+    border-radius: 12px;
+    place-items: center;
+    margin-bottom: 16px;
+  }
+
+  .container-after::after {
+    content: "";
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    background: #4492f8bf;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+  }
+
+  .container-before::before {
+    content: "";
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    background: #4492f8bf;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+  }
+&lt;/style&gt;
+</code>
+</pre>
+      </div>
+
+
+
+      <!-- <div id="Inline" class="container">
+      <h1>Display inline e block</h1>
+      <hr>
+      <h3><span class="inline">inline-block:</span> O elemento continua inline, mas passa a receber as propriedades do box model.
+      </h3>
+      <p>Teste com <span class="inline-block">Inline Block</span></p>
+      <br><br>
+      <p>Teste com <span class="inline">Inline</span></p>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css" >
+.inline-block {
+  color: var(--B1);
+  background-color: var(--A3);
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  width: 160px;
+  padding: 4px;
+}
+
+.inline {
+  color: var(--B1);
+  background-color: var(--A3);
+  display: inline;
+  text-align: center;
+  border-radius: 5px;
+  width: 160px;
+  padding: 4px;
+}
+</code>
+        </pre>
+      </div>
+    </div> -->
+
+      <!-- <div id="grid" class="container">
+      <h1>Grid</h1>
+      <hr>
+      <h3>Com o <span class="inline">display: grid;</span> é possível definirmos colunas e linhas para organizarmos os elementos que estiverem dentro do grid.</h3>
+
+      <div class="display-grid">
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+      </div>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css" >
+.display-grid{
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr 1fr;
+  gap: 20px;
+}
+
+.bloco{
+  background-color: var(--A3);
+  border-radius: 4px;
+}
+</code>
+        </pre>
+      </div>
+    </div> -->
+
+
 
     </div>
 
@@ -178,24 +423,6 @@ img[src$=".webp"]{
       </div>
     </div>
 
-    <div id="img" class="container">
-      <h1>Imagem</h1>
-      <hr>
-      <h3><span class="inline">max-width: 100%;</span> Geralmente definimos um width máximo de 100% para a imagem, assim ela não cresce além do elemento</h3>
-      <img src="../imgs/paisagem-natural-og.webp" alt="paisagem-natural-og">
-
-      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
-        <button onclick="copyCode(this)">Copiar</button>
-        <pre>
-<code class="language-css" >
-img {
-  max-width: 100%;
-}
-</code>
-        </pre>
-      </div>
-    </div>
-
     <div id="grid" class="container">
       <h1>Grid</h1>
       <hr>
@@ -230,6 +457,7 @@ img {
     </div>
 
   </div>
+
 
   <script src="../js/script.js"></script>
   <script type="text/javascript" src="../js/vanilla-tilt.js"></script>

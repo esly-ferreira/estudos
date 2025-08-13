@@ -31,7 +31,7 @@
       <hr>
       <p>Esse CSS define regras globais para padronizar o estilo da página. Remove margens e preenchimentos padrão, ajusta a tipografia com a fonte Poppins, tira a formatação de listas e links, garante que imagens não ultrapassem seu contêiner, zera margens de textos e títulos e aplica borda arredondada em imagens no formato .webp. Tudo isso prepara o layout para ter aparência limpa e consistente.</p>
 
-      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')" data-tilt data-tilt-max="0" data-tilt-scale="1">
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
         <button onclick="copyCode(this)">Copiar</button>
         <pre>
 <code class="language-css" >

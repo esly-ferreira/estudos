@@ -87,13 +87,13 @@ img[src$=".webp"]{
       <hr>
       <h3>Existem centenas de tags e propriedades, é quase impossível você gravar todas elas. Por isso consultamos uma documentação.</h3>
       <h2>Mozilla</h2>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements</a>
+      <a class="link-fora" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements</a>
       <br>
       <br>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a>
+      <a class="link-fora" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a>
 
       <h2>W3C</h2>
-      <a href="https://www.w3.org/TR/" target="_blank">https://www.w3.org/TR/</a>
+      <a class="link-fora" href="https://www.w3.org/TR/" target="_blank">https://www.w3.org/TR/</a>
     </div>
 
     <div id="link" class="container">
@@ -136,7 +136,7 @@ img[src$=".webp"]{
       <h3 class="text-align inline-block">text-align:</h3>
       <h3>text-align: right;</h3> <br>
 
-      <h3 class="text-decoration inline">text-decoration:</h3>
+      <h3 class="link-fora inline">text-decoration:</h3>
       <h3>text-decoration: underline;</h3> <br>
 
       <h3 class="letter-spacing inline">letter-spacing</h3>
@@ -450,6 +450,68 @@ img[src$=".webp"]{
 .bloco{
   background-color: var(--A3);
   border-radius: 4px;
+}
+</code>
+        </pre>
+      </div>
+    </div>
+
+    <div id="grid" class="container">
+      <h1>grid-template-areas</h1>
+      <hr>
+      <h3>Com o <span class="inline">display: grid;</span> é possível definirmos colunas e linhas para organizarmos os elementos que estiverem dentro do grid.</h3>
+
+      <div class="display-grid-gradeados">
+        <div class="bloco item-a">
+          <p>Campo: A</p>
+        </div>
+        <div class="bloco item-b">
+          <p>Campo: B</p>
+        </div>
+        <div class="bloco item-c">
+          <p>Campo: C</p>
+        </div>
+        <div class="bloco item-d">
+          <p>Campo: D</p>
+        </div>
+        <div class="bloco item-e">
+          <p>Campo: E</p>
+        </div>
+      </div>
+
+      <div class="code code-wrapper" onclick="this.classList.toggle('expanded')">
+        <button onclick="copyCode(this)">Copiar</button>
+        <pre>
+<code class="language-css" >
+.display-grid-gradeados {
+  display: grid;
+  grid-template-areas:
+    "a a a b b"
+    "a a a b b"
+    "c c d b b"
+    "c c e e e"
+    "c c e e e";
+  gap: 20px;
+}
+
+.item-a{
+  grid-area: a;
+}
+
+.item-b{
+  grid-area: b;
+}
+
+.item-c{
+  grid-area: c;
+}
+
+.item-d{
+  grid-area: d;
+}
+
+.item-e{
+  grid-area: e;
 }
 </code>
         </pre>

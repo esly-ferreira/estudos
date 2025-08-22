@@ -111,14 +111,18 @@ p {
   padding-bottom: 6px;
 }
 
-a {
+a{
+  text-decoration: none;
   cursor: pointer;
-  text-decoration: underline;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: var(--B1);
   word-break: break-all;
+}
+
+.link-fora{
+  text-decoration: underline;
 }
 
 hr {
